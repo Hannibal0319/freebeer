@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Beer Campaign</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script defer src="app.js"></script>
+  <style>
+
+    html, body {
+        height: 100%;
+        font-size: large;
+    }
+
+    #page-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+
+    #content-wrap {
+        flex: 1;
+    }
+    .social-icon {
+    font-size: 1.5rem;
+    }
+
+    .nav-link{
+        color: rgba(255, 255, 255, 1);
+    }
+
+    header{
+        background-color: #0C4A60   ;
+    }
+
+    .hidden{
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    .card-body >h5{
+        padding: 1rem;
+        background-color: antiquewhite;
+    }
+
+    .card {
+        margin: 10%;
+        font-size: larger;
+    }
+    img{
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#main">Free Beer</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="#main"><u>Home</u></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </nav>
+            </header>
+            <main id="main">
+                <div class="container">
+                    <div class="card hidden">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <a href="https://reketye.com/"><img src="https://lh3.googleusercontent.com/p/AF1QipOQQ-OaCu6C_uFx6rc7_EacCyopa3zxmYJo7d4S=s1360-w1360-h1020" class="card-img" alt="beer picture"></a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Discover the Best Selection of Locally Crafted Beers</h5>
+                                    <p class="card-text">Welcome to our free beer website, where you can enjoy the taste of locally crafted beers without spending a dime! We are proud to offer a wide selection of the best free beers from local breweries</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card hidden">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <a href="https://reketye.com/"><img src="https://lh3.googleusercontent.com/p/AF1QipNOr7TafYGJl8ULoBPYEzKjcN3-eyNT3aMZ129n=s1360-w1360-h1020" class="card-img" alt="beer picture"></a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Easy-to-Use Website for Exploring New Flavors</h5>
+                                    <p class="card-text">Our website makes it easy to discover and enjoy new flavors of beer without the hassle of searching through local stores or spending money on expensive beer tastings. With our user-friendly platform, you can browse through a variety of beer styles and find the perfect beer to suit your taste.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card hidden">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <a href="https://reketye.com/"><img src="https://m.blog.hu/so/sorfigyelo/image/reketye_wheat.jpg" class="card-img" alt="beer picture" style="width: 50%;"></a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Enjoy a Variety of Beer Styles for Free</h5>
+                                    <p class="card-text">From light and refreshing ales to rich and robust stouts, our collection of free beers has something for everyone. We work closely with local breweries to source the best quality beers and bring them directly to you, so you can enjoy the taste of your local community.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card hidden">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <a href="https://reketye.com/"><img src="https://reketye.com/wp-content/uploads/2020/11/CC570C77-0996-4DDF-B81F-974BC502BA79-scaled.jpeg" class="card-img" alt="beer picture"></a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Great Beer Should be Accessible to Everyone</h5>
+                                    <p class="card-text">At our website, we believe that great beer should be accessible to everyone. That's why we offer our selection of free beers to anyone who loves a good brew. So why not join our community of beer lovers today and start exploring the delicious and unique flavors of your local breweries?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+            <h4 class="mb-3">Free Beer Campaign</h4>
+            <p>Join us in our mission to share the joy of free beer with the world.</p>
+        </div>
+        <div class="col-md-4">
+            <h4 class="mb-3">Quick Links</h4>
+            <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h4 class="mb-3">Stay Connected</h4>
+            <p>Follow us on social media for the latest updates and free beer events!</p>
+            <a href="#" class="text-white me-2 social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-2 social-icon"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white me-2 social-icon"><i class="bi bi-instagram"></i></a>
+        </div>
+        </div>
+        <div class="row mt-3">
+        <div class="col">
+            <p class="text-center mb-0">&copy; 2023 Free Beer Campaign. All rights reserved.</p>
+        </div>
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>
