@@ -41,12 +41,15 @@
 
     .hidden{
         opacity: 0;
+        will-change: transform;
+        backface-visibility: hidden;
         filter: blur(2px);
         transform: translateX(-100%);
-        transition: all 1.3s;
+        transition: all 1.3s ease-out;
     }
 
     .show{
+        will-change: transform;
         opacity: 1;
         filter: blur(0);
         transform: translateX(0);
