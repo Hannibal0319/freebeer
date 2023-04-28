@@ -41,15 +41,12 @@
 
     .hidden{
         opacity: 0;
-        will-change: transform;
-        backface-visibility: hidden;
-        filter: blur(2px);
+        filter: blur(5px);
         transform: translateX(-100%);
-        transition: all 1.3s ease-out;
+        transition: all 1s;
     }
 
     .show{
-        will-change: transform;
         opacity: 1;
         filter: blur(0);
         transform: translateX(0);
@@ -71,7 +68,15 @@
         margin: auto;
     }
 
-
+    @media screen and (max-width: 767px){
+        .hidden{
+            opacity: 1;
+        }
+    
+        .show{
+            opacity: 1;
+        }
+    }
 
   </style>
 
